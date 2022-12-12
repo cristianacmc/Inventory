@@ -1,0 +1,14 @@
+all:
+  hosts:
+  children:
+    west:
+      hosts:
+        172.31.34.236
+    east:
+      hosts:
+        172.31.35.107
+    vms:
+      children:
+        west:
+        east:
+
